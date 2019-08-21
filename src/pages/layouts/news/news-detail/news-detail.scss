@@ -1,0 +1,15 @@
+page-news-detail {
+       .bookmark-block {
+    .bookmark {
+      color: green;
+      position: absolute !important;
+      font-size: 2.2em !important;
+      float: right;
+    }
+    .bookmark-clicked {
+      @extend .bookmark;
+      color: $danger;
+    }
+
+  }
+}

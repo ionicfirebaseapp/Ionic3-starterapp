@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>About us</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="about-content">
+  <ion-grid class="grid">
+    <!-- grid title -->
+    <p class="grid-title">
+      Meet Our Team
+    </p>
+
+    <!--team  members row -->
+    <ion-row>
+      <!-- team meber info col  -->
+      <ion-col col-6 class="team-member"  *ngFor="let member of aboutList" (click)="navTeamFullView(member.id)">
+        <div class="wrapper">
+          <!-- team-member image -->
+          <img src="{{member.img}}">
+          <!-- team member name name -->
+          <p class="name">{{member.name}}</p>
+          <!-- degignation -->
+          <p class="designation">{{member.designation}}</p>
+        </div>
+      </ion-col> <!-- col-6 50%  -->
+    </ion-row>
+  </ion-grid>
+</ion-content>

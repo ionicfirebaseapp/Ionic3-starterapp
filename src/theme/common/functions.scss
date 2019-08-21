@@ -1,0 +1,220 @@
+.item{
+	  border-bottom: 1px solid;
+    border-color: rgba(0,0,0,0.05);
+ .item-inner {
+    border-bottom: 0 !important;
+ }
+}
+
+//map page
+
+ 
+#map {
+        width: 100%;
+        height: 100%;
+      }
+
+
+      .sebm-google-map-container {
+        height: 100%;
+}
+
+   ion-footer{
+     position:fixed !important;
+   }
+   .footer::before{
+      background-image:none;
+   }
+   .dir-btn{
+      height: 44px;
+      background-color:$light-blue-theme;
+      border-radius: 0;
+      margin: 0;
+   }
+
+//push page
+
+  .push-page{
+    .send-btn{
+       float:right;
+       background-color:$light-blue-theme;
+
+    }
+  }
+  //local push
+
+   .local-push-page{
+      .send-btn{
+       float:right;
+       background-color:$light-blue-theme;
+
+    }
+   }
+    //In app browser
+      .in-app-browser{
+         .send-btn{
+            background-color:$light-blue-theme;
+            height:40px;
+            border-radius:0;
+
+         }
+      }
+
+     // add mob
+       .add-mob{
+          .send-btn{
+            background-color:$light-blue-theme;
+            height:40px;
+            border-radius:0;
+            margin:1em 0;
+         }
+       }
+  // social
+
+  .auth-action-button{
+      background-color:$light-blue-theme;
+      margin:1em 0;
+      height:40px;
+      border-radius:0;
+       .button-inner{
+          
+       }
+  }
+
+  //video capture
+
+    .video-capture{
+          .send-btn{
+            background-color:$light-blue-theme;
+            height:40px;
+            border-radius:0;
+            margin:1em 0;
+         }
+         video{
+            height:100%;
+            width:100%;
+         }
+    }
+
+    //call number
+
+    .call-number{
+          .send-btn{
+            background-color:$light-blue-theme;
+            margin:1em 0;
+         }
+    }
+
+    //app rate
+
+     .app-rate{
+          .send-btn{
+            background-color:$light-blue-theme;
+            height:40px;
+            border-radius:0;
+            margin:1em 0;
+         }
+     }
+
+    //social 
+
+      .facebook-integration-content,.google-integration-content,.twitter-integration-content{
+         .no-connection-message{
+            padding: 15px 0 !important;
+            text-align:center;
+         }
+         .auth-action-button{
+           width: 70%;
+           margin: 10px auto;
+         }
+         h2{
+           font-size: 2rem;
+           padding: 15px 5px 5px;
+           text-align: center;
+         }
+         img{
+          width: 100%;
+          height: 330px;
+         }
+         p{
+          text-align:center;
+         }
+      }
+
+      //contact
+
+        .contact{
+            background-image:url("../assets/images/contact-bg.jpg");
+            background-size:cover;
+            background-position:center;
+            ::placeholder{
+               color:$white;
+            }
+  .contact-head {
+    margin-top: 2em;
+    text-align: center;
+    color: $white;;
+    font-size: 2.5rem;
+  }
+  .submit-btn {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 4.4rem;
+    background-color: $primary;
+  }
+  .item {
+    background-color: rgba(119, 119, 119, 0.8);
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    height:auto;
+  }
+  .item.item-block .item-inner {
+    border-bottom: 0px;
+  }
+  .item-input .label {
+    color: $white;
+  }
+        }
+
+  //camera 
+    .camera{
+       .row{
+          justify-content: space-between; 
+          .button{
+             background-color:$light-blue-theme;
+          }
+       }
+    }
+
+  // barcode
+     .bar-code{
+        .button{
+            background-color:$light-blue-theme;
+        }
+     }
+
+  // video-player
+
+       .video-player{
+          .button{
+             background-color:$light-blue-theme;
+        } 
+       }
+  //map
+
+     .map{
+        .search{
+          width: 100%;
+          height: 46px;
+          padding-left: 1em;
+          font-size: 18px;
+          border-radius: 10px;
+          margin: 1em;
+          border: 1px solid;
+          border-color: rgba(0,0,0,0.2);
+       }
+     }

@@ -1,0 +1,310 @@
+.social-content{
+   
+	.home-content{
+    
+		.home-header{
+			border-top: 1px solid $white-a;
+			.footer-row{
+				background-color: $white-a;	
+				ion-col{
+					&:not(:last-child){
+						border-right: 1px solid $white-c;
+					}
+				}
+				.footer-btn{
+					color: $black-c;
+					font-weight: 600;
+				}
+			} //footer-row
+		} //home-header
+      .post-btn{
+          position: absolute;
+          top: 12px;
+          right: 20px;
+          color:$light-blue-theme;
+          font-weight: 700;
+       }
+		.home-post{
+			@extend .home-header;
+			.big-image{
+				width: 100%;
+				height: 18em;
+			}
+			.description{
+			font-size: 14px;
+			margin: 6px 0;
+			color: $black-c;
+			padding: 2px 12px 0;	
+			}
+			.counter-row{
+		    padding: 8px 5px;
+			font-size: 13px;
+			color: $black-c; 
+			border-top: 1px solid $white-a;
+			border-bottom: 1px solid $white-a;
+        .col{
+            text-align:center;
+             span{
+                font-weight:700;
+                color:$light-blue-theme;;
+             }
+        }
+			}
+			
+			.user-name{
+				color: $light-blue-theme;
+				font-weight: 500;
+				font-size: 17px;
+			}
+			.publish-date{
+				color: $white-d;
+				font-size: 13px;
+			}	
+      
+		}//home-post
+	} //home-content
+	
+	.profile-header{
+		position: relative;
+		padding-top: 8px;
+		.profile-bg-img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: -3;
+			margin-top: -8px;
+		}
+		.bg-overlay{
+			    position: absolute;
+			    width: 100%;
+			    height: 100%;
+			    background: $black-tranparent;
+			    z-index: -2;
+			    margin-top:-8px;
+		}
+		.avatar{
+			width: 120px;
+		    height: 120px;
+		    border-radius: 50%;
+		    border: 3px solid $white-a;
+		    margin-left: 15px;
+		}
+		.name{
+			color: $white-a;
+			margin-bottom: 6px;
+		}
+		.place{
+			margin: -3px 0 12px;
+			color: $white-b;
+		}
+		.follow-btn{
+			background: $light-blue-tranparent; 
+			border:1px solid $light-blue-theme;
+			padding: 4px 1.1em 0;
+			height: 2em;
+			width: 9.1em;
+			padding: 3px 1.1em 0;
+			font-weight: 400;
+			ion-icon{
+				margin-bottom: 3px;
+			}
+		}
+		.count{
+			background-color: $light-blue-theme;
+			color: $white-a;
+			display: inline-block;
+			width: 38px;
+			height: 38px;
+			line-height: 38px;
+			border-radius: 50%;
+			margin:0;
+		}
+		.count-text{
+			margin-top: 8px;
+			color: $white-a;
+			border-bottom: 1px solid $black-d;
+			padding: 2px 0;
+			font-weight: 300;
+		}
+	}//header
+	   // segment style
+    .segment-button {
+        border-radius: 0!important;
+        border: 0;
+        border-bottom: 1px solid $black-d!important;
+        font-size: 15px;
+        font-weight: 500;
+        padding-top: 6px;
+        height: 3em;
+        color: $black-c;
+    }
+    .segment-button.segment-activated {
+        background: $white-b;
+        color: $light-blue-theme;
+        // border-bottom: 1px solid $black-b!important;
+    } // segment -end
+     .gallary-grid {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+           -webkit-animation: profile-photos 1s 1 ease-in;
+           .img-wrap {
+               width: 30%;
+               height: 90px;
+               margin: 1%;
+               border: 1px solid $white-b;
+               img {
+                   width: 100%;
+                   height: 100%;
+               }
+           }
+           &:after {
+               content: "";
+               width: 30%;
+               margin: 1%;
+           }
+       } //gallary grid view-end
+       
+       //post
+       .post{
+       		min-height: 100px;
+         .post-image{
+         	height: 99px;
+         	width: 100%;
+         	padding-top: 1px;
+         } 
+         .description{
+         	font-size: 17px;
+         	color: $black-a;
+         	font-weight: 500;
+         	margin-bottom: 22px;
+         }  
+         .footer-row{
+         	    position: absolute;
+   				bottom: 0px;
+   				font-size: 13px;
+   				color: $black-b;
+   				height: 28px;
+   				.count{
+   					font-weight: 500;
+   				}
+         }  		
+       	} //post-end
+       	
+       	// commments-section
+       	//comments-header
+       	.comments-header{
+            padding: 10px 10px 4px;
+       		    font-size: 17px;
+       		    font-weight: 500;
+       		    color: $black-c;
+       		    border-bottom: 1px solid $black-d;
+              display: flex;
+              justify-content:space-between;
+       			.close-btn{
+       				margin: -12px 0 0 0;
+				    color: $black-c;
+				    padding-right: 0;
+				    font-size: 19px;
+				    height: 1.8em;
+       			}
+       	} //comments-header
+       	.comments-list{
+            margin:5px 0;
+       	.comments-item{
+       		padding: 0 10px;
+       		min-height: 70px;
+       		height: auto;
+       		.item-inner{
+             padding-right: 0!important;
+              }
+            .label{
+               margin: 5px 8px 5px 0;
+            }
+       		 &:last-child{
+       			border-bottom: 0!important;
+       		 }
+       		 &:first-child{
+       			border-top: 0!important;
+       		 }
+       		.avatar-img{
+       			height: 40px;
+            width:40px;
+			      border: 1px solid $white-c;
+			      border-radius: 50%;
+       		}
+       		.user-name{
+       			font-weight: 600;
+       			font-size: 17px;
+       			color: $black-c;
+       			overflow: hidden;
+			    width: 75%;
+			    text-overflow: ellipsis;
+       		}
+       		.time{
+       
+				margin: 0;
+			    font-size: 12px;
+			    color: $black-b;
+       		}
+       		.comment{
+       			color: $black-c;
+       			font-size: 14px;
+       			margin-top: 2px;
+       			text-align: justify;
+       			font-weight: 300;
+       		}
+       	} //comments-item
+       	} //comments-list
+       	.commnets-footer{
+       		position: fixed;
+          bottom: 0;
+       		border-top: 1px solid;
+          border-color:rgba(0,0,0,0.05);
+       		background-color: $white;
+          .row{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid;
+            border-color: rgba(0,0,0,0.1);
+            background-color: $white;
+       		.send-btn{
+       			margin:1px 0 0 0;
+       			padding: 0 14px;
+       			height: 1.8em;
+       			color: $light-blue-theme;
+       			font-size: 20px;
+       			ion-icon{
+       				font-size: 30px;
+       			}
+       		}
+          }
+            ion-input{
+              margin:0 10px;
+            }
+       	}
+
+       	// animation for profile-photos 
+       	@keyframes profile-photos{
+       		0% 	{opacity : 0;}
+       		10% { opacity: .1;}
+       		20% { opacity: .2;}
+       		30% { opacity: .3;}
+       		40% { opacity: .4;}
+       		50% { opacity: .5;}
+       		70% { opacity: .7;}
+       		80% { opacity: .8;}
+       		90% { opacity: .9;}
+       		100% { opacity: 1;}
+       	}
+}
+
+ //social sharing
+
+   .social-sharing{
+      .button{
+         width: 70%;
+         margin: 1em auto;
+      }
+   }

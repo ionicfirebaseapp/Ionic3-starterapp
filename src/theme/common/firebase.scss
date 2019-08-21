@@ -1,0 +1,250 @@
+.login{
+    background-image:url("../assets/images/contact-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+     .logo{
+        width:200px;
+        display: block;
+        margin: 0 auto;
+        padding: 2em 0 0;
+     }
+    .list{
+        margin: 6em 0 0;
+    
+    .item{
+        border: 1px solid $border;
+        border-radius: 38px;
+        margin: 1em 0;
+    }
+ }
+ .btn-block{
+      p{
+        color: $white;
+        padding: 0 0 0 10px;
+      }
+      .button{
+          background-color:$primary;
+          border-radius:38px;
+      }
+   }
+}
+.registration{
+    background-image:url("../assets/images/contact-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+     .logo{
+        width:200px;
+        display: block;
+        margin: 0 auto;
+        padding: 2em 0 0;
+     }
+    .list{
+        margin: 2em 0 0;
+    
+    .item{
+        border: 1px solid $border;
+        border-radius: 38px;
+        margin: 1em 0;
+    }
+ }
+ .btn-block{
+      p{
+        color: $white;
+        padding: 0 0 0 10px;
+      }
+      .button{
+          background-color:$primary;
+          border-radius:38px;
+      }
+   }
+   .profile-img{
+    width: 120px;
+    height: 120px;
+    border: 10px solid $border;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+ }
+ ion-icon{
+    color:$danger;
+    position: absolute;
+    top: 103px;
+    right: 130px;
+    font-size: 4rem;
+  }
+   .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  .inputfile + label {
+    font-size: 2.7em;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    display: inline-block;
+    display: block;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+  }
+}
+
+.form{
+    .top-bar{
+        background-image: url("http://res.cloudinary.com/ujju/image/upload/c_scale,w_637/v1499925333/starter/group.jpg");      
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height:150px;
+    }
+    .add-btn{
+        float:right;
+        color:$white;
+        font-size: 10px;
+        height: 24px;
+        background-color: rgba(0,0,0,0.4);
+    }
+    .logout-btn{
+        float:left;
+        color:$white;
+        font-size: 10px;
+        height: 24px;
+        background-color: rgba(0,0,0,0.4);
+    }
+        
+    .profile-img{
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        border: 4px solid $white;
+        position: absolute;
+        top: -55px;
+        z-index: 999;
+    }
+    .username{
+        position: relative;
+        top: -64px;
+        color: $white;
+        font-size: 22px;
+        left: 24px;
+        z-index: 9999;
+        text-transform: capitalize;
+    }
+    .city{
+        padding: 5px 5px 0 24px;
+        margin: 0;
+        position: absolute;
+        top: 10px;
+        font-size: 12px;
+        color:$primary;
+    }
+    .bio-card{
+        margin-top: -15px;
+    
+    .bio{
+        padding: 1em;
+        color:$grey;
+        font-size:16px;
+    }
+}
+    .overlay{
+        height: 47px;
+        background: linear-gradient(10deg, white,black 91%);background: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(256,256,256,0.05)100%);
+        position: absolute;
+        top: 103px;
+        width: 100%;
+    }
+    .actions{
+        border-bottom:1px solid;
+        border-color:rgba(0,0,0,0.1);
+        .f-name{
+            font-size: 1.8rem;
+            text-transform: capitalize;
+        }
+    .label{
+        margin: 0px 8px 0px 0;
+    }
+    .item{
+        border:0;
+        margin: 0 0 .7em 0;
+        height:42px;
+    }
+    ion-icon{
+        font-size: 2rem;
+        margin: 20px 10px 0;
+    }
+    .del-full-block{
+        background-color: #d5d5d5;
+        padding: 0 0 18px 0;
+    }
+    .edit{
+        color:$grey;
+        padding: 0 0 0 10px;
+    }
+    .trash{
+        color:$danger;
+        float: right;
+    }
+}
+ .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  .inputfile + label {
+    font-size: 2.7em;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    display: inline-block;
+    display: block;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    ion-icon{
+        font-size:3.2rem;
+      position: absolute;
+      top: 15px;
+      z-index: 99999;
+      color: $danger;
+      right: 9px;
+    }
+  }
+
+}
+.add-form{
+   
+         
+        .list{
+            margin: 2em 0 0;
+        
+        .item{
+          
+            border: 1px solid $border;
+            border-radius: 5px;
+            margin: 1em 0;
+        }
+     }
+     .btn-block{
+          p{
+            color: $white;
+            padding: 0 0 0 10px;
+          }
+          .button{
+              background-color:$primary;
+              border-radius:5px;
+          }
+       }
+       .item.item-textarea {
+        height:auto;
+    }
+    
+     
+    }

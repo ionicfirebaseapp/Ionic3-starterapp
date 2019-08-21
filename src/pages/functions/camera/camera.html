@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Camera</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="camera">
+  <ion-row>
+    <button ion-button color="primary" (click)="openCamera()">Start</button>
+    <button ion-button color="primary" (click)="selectPicture()">Select</button>
+  </ion-row>
+  <img #myImage height="100%" width="100%">
+</ion-content>

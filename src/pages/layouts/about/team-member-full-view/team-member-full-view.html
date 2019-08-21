@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Team Member Detail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="about-content">
+  <div class="member-details">
+    <!-- big image -->
+    <img src="{{teamMember.img}}">
+    <!-- name -->
+    <div class="content">
+      <p class="name">{{teamMember.name}}</p>
+      <!-- designation -->
+      <p class="designation">{{teamMember.designation}}</p>
+      <!-- details -->
+      <p class="details">
+        {{teamMember.detail}}
+      </p>
+      <!-- social button -->
+      <div class="social-btn">
+        <!-- facebook-button -->
+        <button ion-button small icon-only class="btn-fb">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+        <!-- twitter button -->
+        <button ion-button small icon-only class="btn-twitter">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </button>
+        <!-- google-plus button -->
+        <button ion-button small icon-only class="btn-google-plus">
+          <ion-icon name="logo-googleplus"></ion-icon>
+        </button>
+        <!-- linkedin button -->
+        <button ion-button small icon-only class="btn-linkedin">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </button>
+      </div> <!-- social button -->
+    </div> <!-- content -->
+  </div>
+</ion-content>

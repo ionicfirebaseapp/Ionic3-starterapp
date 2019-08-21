@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Products</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="ecommerce-content">
+  <ion-grid class="grid">
+    <!-- first-row -->
+    <ion-row>
+      <!-- search box -->
+      <ion-searchbar></ion-searchbar>
+    </ion-row><!-- first row -->
+
+<!--categories-->
+<ion-list class="categories-list" *ngFor="let item of productListData" (click)="navDetails(item.id)">
+   <ion-item>
+     <ion-thumbnail item-start>
+       <img src="{{item.image}}">
+     </ion-thumbnail>
+       <h2>{{item.name}}</h2>
+       <p class="price"><span class="cut-price">${{item.price}}</span>${{item.offprice}}</p>
+       <p class="brand">{{item.brand}}</p>
+   </ion-item>
+</ion-list>
+
+  </ion-grid>
+</ion-content>

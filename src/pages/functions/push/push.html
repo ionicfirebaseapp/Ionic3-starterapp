@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>push</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="push-page">
+  <form #f="ngForm" (ngSubmit)="onSend(f)">
+    <ion-row class="chat-footer">
+      <ion-item>
+        <ion-input type="text" placeholder=" Type message..." name="input"
+                   id="input"
+                   [(ngModel)]="message.contents.en" clearInput required>
+        </ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button class="send-btn" type="submit" [disabled]="!f.valid"> Send Notification
+        </button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

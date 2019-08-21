@@ -1,0 +1,65 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>comments</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<div class="social-content">
+<ion-content>
+  <div class="comments-header">
+    <!-- counter -->
+    <div>
+      <span>12 &nbsp;</span>Comments
+    </div>
+    <!-- close-buttton -->
+    <div>
+      <button ion-button clear class="close-btn">
+        <ion-icon name="close-circle"></ion-icon>
+      </button>
+    </div>
+  </div><!--  commnets-header -->
+  <ion-list class="comments-list">
+    <ion-item class="comments-item" *ngFor="let item of comments">
+      <ion-row no-padding>
+        <!-- col-for  -->
+        <ion-col col-2>
+          <img src="{{item.img}}" class="avatar-img">
+        </ion-col>
+        <!-- col-for-content -->
+        <ion-col col-10>
+          <ion-row>
+            <ion-col col-9 no-padding>
+              <!-- Name -->
+              <h3 class="user-name">{{item.name}} </h3>
+            </ion-col>
+            <ion-col col-3 text-right no-padding>
+              <!-- time -->
+              <ion-note class="time" item-right>{{item.time}}</ion-note>
+            </ion-col>
+          </ion-row>
+          <!-- description -->
+          <p class="comment" text-wrap>{{item.comment}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</ion-content>
+  <!-- footer with input box and send button -->
+  <ion-footer class="commnets-footer">
+    <ion-row>
+      <!-- col-10 input feild -->
+      <ion-col col-10>
+        <ion-input type="text" value="" placeholder="Write a comment" class="input">
+        </ion-input>
+      </ion-col> <!-- col-10 -->
+      <!-- col-2 send button -->
+      <ion-col col-2>
+        <button ion-button clear class="send-btn">
+          <ion-icon name="send"></ion-icon>
+        </button>
+      </ion-col> <!-- col-2 -->
+    </ion-row> <!--  -->
+  </ion-footer> <!-- footer -->
+</div>

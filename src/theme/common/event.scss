@@ -1,0 +1,115 @@
+.event-content{
+	// event segment style
+    .segment-button {
+        border-radius: 0!important;
+        border: 0;
+        border-bottom: 1px solid $black-d!important;
+        font-size: 17px;
+        font-weight: 500;
+        padding-top: 12px;
+        height: 3em;
+        color: $black-c;
+        padding-top: 6px;
+    }
+    .segment-button.segment-activated {
+        background: $white-b;
+        color: $light-blue-theme;
+        border-bottom: 1px solid $light-blue-theme!important;
+    } // segment-end
+    // event-item
+	.event-item{
+		padding-left: 0;
+		height:auto;
+		
+		.item-inner{
+				padding-right:0!important;
+				background-image:none!important;
+				ion-label{
+					margin:0!important;
+				}
+			}
+
+		.calendar{
+			color: $white-d;
+			background-color: $white-a;
+			padding: 10px 0;
+			.day{
+			    color:$light-blue-theme;
+				font-size: 28px;
+    			font-weight: 600;
+			}
+			.month{
+				font-size: 13px;
+				font-weight: 400;
+				margin: 1px 0 4px;
+				text-transform: uppercase;
+			}
+			.time{
+				font-size: 12px;
+				font-weight: 400;
+			}
+		} //calendar
+		.content{
+		padding: 6px  0;
+		.title{
+			overflow: hidden;
+			color: $light-blue-theme;
+   			font-size: 17px;
+   			text-overflow: ellipsis;
+   			margin-bottom: 8px;
+   			font-weight: 500;
+		}
+		.time{
+			color: $white-d;
+			font-size: 13px;
+			overflow:hidden;
+			margin-right:6px;
+			text-overflow: ellipsis;
+		}
+		.address{
+			@extend .time;
+			margin-top: 5px;
+			
+		}
+		} //content
+		.arrow-icon{
+			   color: $light-blue-b;	
+			   margin-top: 27px;
+			   font-size: 20px;
+			   font-weight: 600;
+		}
+	} //event-item
+  .event-details {
+            padding: 0 10px;
+            .title {
+                font-weight: 500;
+                font-size: 20px;
+                color: $light-blue-a;
+                margin: 5px 0;
+            }
+            .sub-title {
+                color: $black-c;
+                font-size: 17px;
+                margin: 5px 0;
+            }
+            .time{
+				color: $white-d;
+				border-bottom: 1px solid $white-c;
+				border-top: 1px solid $white-c;
+				padding: 5px 0 4px;
+				font-size: 14px;
+				font-weight: 500;
+            }
+            .details {
+                color: $black-c;
+                font-weight: 400;
+                text-align: justify;
+                line-height: 20px;
+                margin-bottom: 8px;
+            }
+        } //event-details-end
+        // height of map
+        agm-map {
+  			height: 300px;
+		}
+}

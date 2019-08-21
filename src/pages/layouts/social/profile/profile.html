@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>Ethen Hunt</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="social-content">
+  <div class="profile-header">
+    <div class="bg-overlay"></div><!-- bg-overlay -->
+    <img src="assets/images/profile-bg2.jpg" class="profile-bg-img">
+    <!-- name and pics -->
+    <ion-row>
+      <!-- image -->
+      <ion-col col-5>
+        <img src="assets/images/user2.png" class="avatar">
+      </ion-col>
+      <!-- name and follow-btn-->
+      <ion-col col-7>
+        <h2 class="name">Ethen Hunt</h2>
+        <p class="place" text-wrap>From San Farncisco, USA</p>
+        <button ion-button class="follow-btn" icon-left>
+          <ion-icon name="add"></ion-icon>&nbsp;Follow
+        </button>
+      </ion-col>
+    </ion-row><!-- name and pic -->
+    <!-- detail -->
+    <ion-row>
+      <!-- followers -->
+      <ion-col text-center>
+        <p class="count">222</p>
+        <p class="count-text">Followers</p>
+      </ion-col>
+      <!-- following -->
+      <ion-col text-center>
+        <p class="count">456</p>
+        <p class="count-text">Following</p>
+      </ion-col>
+      <!-- post -->
+      <ion-col text-center>
+        <p class="count">45</p>
+        <p class="count-text">Post</p>
+      </ion-col>
+      <!-- pics-->
+      <ion-col text-center>
+        <p class="count">345</p>
+        <p class="count-text">Photos</p>
+      </ion-col>
+    </ion-row><!-- detail -->
+  </div><!-- profile header -->
+
+  <!--segment for post and images-->
+  <ion-segment [(ngModel)]="profile">
+    <!-- segment btn for Post -->
+    <ion-segment-button value="post">
+      <ion-icon name="document"></ion-icon>&nbsp;
+      All Post
+    </ion-segment-button>
+    <!-- segment btn for photo gallery -->
+    <ion-segment-button value="photos-gallery">
+      <ion-icon name="images"></ion-icon>&nbsp;
+      Pics
+    </ion-segment-button>
+  </ion-segment>
+  <!-- content -->
+  <div [ngSwitch]="profile">
+
+    <!-- Post-->
+    <ion-list *ngSwitchCase="'post'">
+      <ion-card class="post" *ngFor="let item of post">
+        <ion-card-content no-padding>
+          <ion-row>
+            <!-- col-4 for side image-->
+            <ion-col col-4>
+              <!-- post left image -->
+              <img src="{{item.img}}" class="post-image">
+            </ion-col>
+            <!-- col-8 for post details -->
+            <ion-col col-8>
+              <!-- description -->
+              <h2 class="description">{{item.desc}}</h2>
+              <!-- footer-row likes and counter-->
+              <ion-row class="footer-row">
+                <ion-col>
+                  <span class="count">{{item.like}}&nbsp;</span>Likes
+                </ion-col>
+                <ion-col>
+                  <span class="count">{{item.comment}}&nbsp;</span>Comments
+                </ion-col>
+                <ion-col>
+                  <span class="count">{{item.share}}&nbsp;</span>Share
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+
+    <!-- pics -->
+    <div *ngSwitchCase="'photos-gallery'">
+      <div class="gallary-grid">
+
+        <div class="img-wrap" *ngFor="let img of images">
+
+          <img src="{{img}}" imageViewer>
+
+        </div>
+      </div>
+    </div>
+
+  </div> <!--content -->
+
+</ion-content>

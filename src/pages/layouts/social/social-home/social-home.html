@@ -1,0 +1,76 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="social-content">
+  <!-- home content -->
+  <div class="home-content" *ngFor="let item of socialList">
+    <!-- home-header -->
+    <ion-card class="home-header">
+      <ion-item>
+        <!-- avatar image -->
+        <ion-avatar item-start>
+          <img src="{{item.profilepic}}" (click)="navProfile(item.id)">
+        </ion-avatar>
+        <!-- input feild -->
+        <ion-input type="text" value="" placeholder="What's in your mind?" class="input">
+        </ion-input>
+      </ion-item>
+      <p class="post-btn">Post</p>
+      <!-- foooter row with buttons status photo and check in  -->
+      <ion-row class="footer-row">
+        <!-- status button -->
+        <ion-col no-padding text-center>
+          <button ion-button icon-left clear small class="footer-btn">
+            <ion-icon name="create"></ion-icon>&nbsp;&nbsp;
+            <div>STATUS</div>
+          </button>
+        </ion-col>
+        <!-- photo button -->
+        <ion-col no-padding text-center>
+          <button ion-button icon-left clear small class="footer-btn">
+            <ion-icon name="camera"></ion-icon>&nbsp;&nbsp;
+            <div>PHOTO</div>
+          </button>
+        </ion-col>
+        <!-- check-in button -->
+        <ion-col no-padding text-center>
+          <button ion-button icon-left clear small class="footer-btn last">
+            <ion-icon name="locate"></ion-icon>&nbsp;&nbsp;
+            <div>CHECK IN</div>
+          </button>
+        </ion-col>
+      </ion-row> <!-- footer row -->
+    </ion-card> <!-- homer header -->
+
+    <!-- =======Home post========= -->
+    <!-- home-post -->
+    <ion-card class="home-post">
+      <img src="{{item.image}}"
+           class="big-image">
+      <p class="description">
+        {{item.description}}
+      </p>
+
+      <ion-row class="counter-row">
+        <ion-col>
+          <span class="count">12&nbsp;</span>Likes
+        </ion-col>
+        <ion-col (click)="navComment(item.id)">
+          <span class="count">15&nbsp;</span>Comments
+        </ion-col>
+        <ion-col>
+          <span class="count">56&nbsp;</span>Share
+        </ion-col>
+      </ion-row>
+     
+    </ion-card> <!-- homer post -->
+
+
+  </div> <!-- home content  -->
+</ion-content>

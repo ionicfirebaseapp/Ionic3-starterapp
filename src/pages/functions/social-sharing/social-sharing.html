@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>social-sharing</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="social-sharing" padding>
+
+  <button ion-button block class="auth-action-button" (click)="fbSharing()">
+    <ion-icon name="logo-facebook"></ion-icon> &nbsp; Share with facebook
+  </button>
+
+  <button ion-button block class="auth-action-button" (click)="twitterSharing()">
+    <ion-icon name="logo-twitter"></ion-icon> &nbsp; Share with twitter
+  </button>
+
+  <button ion-button block class="auth-action-button" (click)="googleSharing()">
+    <ion-icon name="logo-googleplus"></ion-icon> &nbsp; Share with googleplus
+  </button>
+
+  <button ion-button block class="auth-action-button" (click)="whatsAppSharing()">
+    <ion-icon name="logo-whatsapp"></ion-icon> &nbsp; Share with WhatsApp
+  </button>
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Notifications-Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="notifications-content">
+  <ion-card class="notifications-details">
+    <ion-item class="header">
+      <ion-avatar item-start>
+        <img src="assets/images/profile.png" class="avatar-image">
+      </ion-avatar>
+      <h2 class="user-name">{{notification.name}}</h2>
+      <p class="publish-date">{{notification.time}}</p>
+    </ion-item>
+
+    <img src="{{notification.img}}" class="big-image">
+
+    <ion-card-content>
+      <p class="details">{{notification.description}}</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>&nbsp;&nbsp;
+          <span class="btn-text">12 Likes</span>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>&nbsp;&nbsp;
+          <span class="btn-text">4 Comments</span>
+        </button>
+      </ion-col>
+      <ion-col text-center class="time">
+        11h ago
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

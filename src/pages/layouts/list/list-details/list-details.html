@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="list-content">
+  <div class="list-details">
+    <!-- big image -->
+    <img src="{{list.img}}" class="top-image">
+    <!-- name -->
+    <div class="content">
+      <p class="title">{{list.title}}</p>
+      <!-- designation -->
+      <p class="sub-title">{{list.subtitle}}</p>
+      <p class="date">{{list.time}}</p>
+      <!-- details -->
+      <p class="details">
+        {{list.desc}}
+      </p>
+      <!-- social button -->
+      <p class="share-title">Share with</p>
+      <div class="social-btn">
+        <!-- facebook-button -->
+        <button ion-button small icon-only class="btn-fb">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+        <!-- twitter button -->
+        <button ion-button small icon-only class="btn-twitter">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </button>
+        <!-- google-plus button -->
+        <button ion-button small icon-only class="btn-google-plus">
+          <ion-icon name="logo-googleplus"></ion-icon>
+        </button>
+        <!-- linkedin button -->
+        <button ion-button small icon-only class="btn-linkedin">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </button>
+      </div> <!-- social button -->
+    </div> <!-- content -->
+  </div>
+</ion-content>

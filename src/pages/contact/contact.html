@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Contact</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="contact">
+  <p class="contact-head">Contact Us</p>
+  <form (ngSubmit)="onSend(f)" #f="ngForm">
+    <!--name-->
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-input type="text" name="name" id="name" placeholder="Name"
+                     [(ngModel)]="user.name" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <!--email-->
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-input type="email" name="email" id="email" placeholder="Email"
+                     [(ngModel)]="user.email" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <!--message-->
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-textarea rows="6" lineHeight="42" name="message" id="message" placeholder="Message"
+                        [(ngModel)]="user.message" required></ion-textarea>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button class="submit-btn" type="button" (click)="attachImage()">Attach Image</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-card *ngIf="currentImage">
+      <ion-card-header>Attached file</ion-card-header>
+      <ion-card-content>
+        <img [src]="currentImage"/>
+      </ion-card-content>
+    </ion-card>
+    <!--button-->
+    <ion-row>
+      <ion-col col-12>
+        <button class="submit-btn" ion-button type='submit' [disabled]="!f.valid">Send</button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

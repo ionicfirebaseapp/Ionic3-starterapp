@@ -1,0 +1,70 @@
+.notifications-content{
+		.notification-item{
+		position: relative;
+		height: 80px;
+	.divider{
+		padding-top: 12px;
+		color: $black-b;
+		font-size: 15px;
+		height: 56px;
+	}
+	.img-avatar{
+		width: 56px;
+		height: 56px;	
+	}
+	.time{
+    font-size: 12px;
+    margin-top: -8px;
+	}
+	.name{
+		color: $light-blue-theme;
+		margin-bottom: 5px;
+		overflow: hidden;
+	}
+} //notificaion-item
+	.description{
+		color: $black-d;
+		font-size: 13px;
+		overflow: hidden;
+	}
+	.notifications-details{
+		width: 100%;
+		margin: 0;
+		.header{
+			background-color: $white-a;
+			.avatar-image{
+				width: 44px;
+				height: 44px;
+			}
+			.user-name{
+				color: $light-blue-theme;
+				font-weight: 500;
+				font-size: 17px
+				
+			}
+			.publish-date{
+				color: $white-d;
+				font-size: 13px;
+			}
+		}
+		.big-image{
+			width: 100%;
+			height: 18em;
+		}
+		.details{
+			color:$black-c;
+		}
+		button{
+			color: $light-blue-theme;
+			.btn-text{
+				color: $black-b;
+			}
+		}
+		.time{
+			padding-top: 15px;
+			font-size: 13px;
+			color: $black-b;
+			
+		}
+	} //notifications-details
+}

@@ -1,0 +1,99 @@
+.about-content {
+    .grid {
+        //grid-heading	
+        .grid-title {
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 17px;
+            color: $black-c;
+        }
+        .team-member {
+            min-height: 238px;
+            text-align: center;
+            .wrapper {
+                border: 1px solid $white-b;
+                padding: 4px 0 6px;
+                height: 100%;
+                border-radius: 4px;
+                position: relative;
+            }
+            img {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                border: 2px solid $white-c;
+            }
+            .name {
+                font-size: 16px;
+                font-weight: 500;
+                color: $light-blue-theme;
+                margin: 5px 0 4px;
+            }
+            .designation {
+                margin: 0;
+                font-size: 16px;
+                color: $black-b;
+                font-weight: 300;
+                line-height: 18px;
+            }
+            // .btn-know-more {
+            //     color: $black-c;
+            //     font-weight: 300;
+            //     font-size: 14px;
+            //     display: block;
+            //     position: absolute;
+            //     bottom: -9px;
+            //     width: 100%;
+            // }
+        } //team member-block -end
+    } //grid-end
+    //team-member-full-details
+    .member-details {
+        img {
+            width: 100%;
+            height: 25em;
+        }
+        .content {
+            padding: 0 10px;
+            .name {
+                font-weight: 500;
+                font-size: 19px;
+                color: $black-b;
+            }
+            .designation {
+                color: $black-c;
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: -5px;
+            }
+            .details {
+                color: $black-d;
+                font-weight: 300;
+                text-align: justify;
+                line-height: 20px;
+            }
+        }
+        .social-btn {
+            .btn-fb {
+                background-color: $facebook;
+                color: $white;
+                margin-right: 12px;
+                height: 2em;
+                width: 28px;
+            }
+            .btn-twitter {
+                @extend .btn-fb;
+                background-color: $twitter;
+            }
+            .btn-linkedin {
+                @extend .btn-fb;
+                background-color: $linkedin;
+            }
+            .btn-google-plus {
+                @extend .btn-fb;
+                background-color: $google-plus;
+            }
+        }
+    } //member-details -end
+}

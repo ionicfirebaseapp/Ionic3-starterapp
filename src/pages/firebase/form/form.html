@@ -1,0 +1,69 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>User Info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="form">
+  <button class="add-btn" (click)="addForm()" ion-button color="light" outline>
+    <ion-icon name="add"></ion-icon> &nbsp; Add/Edit</button>
+  <button class="logout-btn" (click)="logout()" ion-button color="light" outline>
+    &nbsp; Logout</button>
+
+  <div class="top-bar"></div>
+  <ion-row>
+    <ion-col col-4>
+      <img class="profile-img" src="{{user?.imageUrl? user?.imageUrl: 'assets/images/profile.png'}}">
+      <input type="file" name="file" class="inputfile" id="inputFileId" (change)="UploadImage($event)">
+      <label for="file" class="upload">
+            <ion-icon name="camera"></ion-icon>
+          </label>
+
+     
+
+    </ion-col>
+    <ion-col col-8>
+      <p class="username">{{user?.name}}</p>
+      <p class="city">
+        <ion-icon name="mail"></ion-icon> &nbsp; {{user?.email}}</p>
+    </ion-col>
+  </ion-row>
+  <div class="overlay"></div>
+  <ion-card class="bio-card">
+    <p class="bio">Please click add button to add more info & do UPDATE/DELETE operations as well.  </p>
+  </ion-card>
+  <ion-card *ngIf="isUserInfoNull == false">
+    <ion-row class="actions">
+        <ion-col col-12 class="del-full-block">
+            <span>
+              <ion-icon (click)="addForm()" class="edit" name="create"></ion-icon>
+            </span>
+            <span>
+              <ion-icon class="trash" name="trash" (click)="deleteInfo()"></ion-icon>
+            </span>
+          </ion-col>
+      <ion-col col-12>
+        <ion-item>
+          <p class="f-name"> <ion-icon name="home"></ion-icon> {{userInfo.city ? userInfo.city : 'City'}}</p>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="actions">
+      <ion-col col-12>
+        <ion-item>
+          <p class="f-name"> <ion-icon name="planet"></ion-icon> {{userInfo.country ? userInfo.country : 'Country'}}</p>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="actions">
+      <ion-col col-12>
+        <ion-item>
+          <p class="f-name"> <ion-icon name="call"></ion-icon> {{userInfo.mobileNo ? userInfo.mobileNo : 'Mobile No.'}}</p>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

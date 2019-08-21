@@ -1,0 +1,127 @@
+{
+	"productSlider": [{
+			"id": "0326",
+			"img": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/cloths.jpg",
+			"title": "Fashion points"
+		},
+		{
+			"id": "0327",
+			"img": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/cloths2.jpg",
+			"title": "Something For All"
+		},
+		{
+			"id": "0328",
+			"img": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/cloths.jpg",
+			"title": "Stay Updated "
+		},
+		{
+			"id": "0329",
+			"img": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/cloths2.jpg",
+			"title": "And Many More"
+		}
+	],
+	"productCategory": [{
+			"id": "0612",
+			"img": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/man.jpg",
+			"name": "Men"
+		},
+		{
+			"id": "0613",
+			"img": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/woman.jpg",
+			"name": "Women"
+		},
+		{
+			"id": "0614",
+			"img": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/kids.jpg",
+			"name": "Kids"
+		},
+		{
+			"id": "0615",
+			"img": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/other-dress.jpg",
+			"name": "Other Cloths"
+		}
+	],
+	"products": [{
+			"id": "0251",
+			"image": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/man-1.jpg",
+			"name": "Puma Men's Solid, Self Design Formal Light Blue Shirt",
+			"price": "42.55",
+			"offprice": "34.56",
+			"brand": "Puma",
+			"description": "Fall in love with the soft texture as you adorn this regular - fit T - shirt,in Charcoal coloured,from the house of Campus Sutra.Your skin will love the feel of this T - shirt as it is fashioned using the material "
+
+		},
+		{
+			"id": "0252",
+			"image": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/man-2.jpg",
+			"name": "Adidas Men's Solid Casual Light Blue Shirt",
+			"price": "34.56",
+			"offprice": "22.55",
+			"brand": "Adidas",
+			"description": "Fall in love with the soft texture as you adorn this regular - fit T - shirt,in Charcoal coloured,from the house of Campus Sutra.Your skin will love the feel of this T - shirt as it is fashioned using the material "
+
+		},
+		{
+			"id": "0253",
+			"image": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/man-3.jpg",
+			"name": "Sparky Men's Solid Casual White Shirt",
+			"price": "34.56",
+			"offprice": "22.55",
+			"brand": "Sparky",
+			"description": "Fall in love with the soft texture as you adorn this regular - fit T - shirt,in Charcoal coloured,from the house of Campus Sutra.Your skin will love the feel of this T - shirt as it is fashioned using the material "
+
+		},
+		{
+			"id": "0254",
+			"image": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/man-4.jpg",
+			"name": "Reebok Men's Solid, Self Design Formal Light Blue Shirt",
+			"price": "42.55",
+			"offprice": "22.55",
+			"brand": "Reebok",
+			"description": "Fall in love with the soft texture as you adorn this regular - fit T - shirt,in Charcoal coloured,from the house of Campus Sutra.Your skin will love the feel of this T - shirt as it is fashioned using the material "
+
+		},
+		{
+			"id": "0255",
+			"image": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/man-5.jpg",
+			"name": "Adidas Men's Solid Casual White Shirt",
+			"price": "42.55",
+			"offprice": "22.55",
+			"brand": "Adidas",
+			"description": "Fall in love with the soft texture as you adorn this regular - fit T - shirt,in Charcoal coloured,from the house of Campus Sutra.Your skin will love the feel of this T - shirt as it is fashioned using the material "
+
+		},
+		{
+			"id": "0256",
+			"image": "http://res.cloudinary.com/ujju/image/upload/v1499924627/starter/man-6.jpg",
+			"name": "Buffalo Men's Solid, Self Design Formal Light Blue Shirt",
+			"price": "32.55",
+			"offprice": "20.55",
+			"brand": "Buffalo",
+			"description": "Fall in love with the soft texture as you adorn this regular - fit T - shirt,in Charcoal coloured,from the house of Campus Sutra.Your skin will love the feel of this T - shirt as it is fashioned using the material "
+
+		}
+
+	],
+	"review": [{
+			"id": "062",
+			"name": "Raam Meena",
+			"img": "assets/images/profile.png",
+			"description": "This product is userful for me."
+		},
+		{
+			"id": "063",
+			"name": "Tom bruce",
+			"img": "assets/images/profile.png",
+			"description": "This product is great"
+		},
+		{
+			"id": "064",
+			"name": "Andrew johnson",
+			"img": "assets/images/profile.png",
+			"description": "This product is good"
+		}
+
+	]
+
+}

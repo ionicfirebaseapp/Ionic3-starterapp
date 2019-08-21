@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="ecommerce-content">
+  <ion-grid class="grid">
+    <ion-row><!-- first row -->
+      <ion-slides initialSlide=0 speed="3000" loop="true" pager="true" style="direction:ltr">
+        <ion-slide *ngFor="let slideItem of slider">
+          <div class="overlay">
+            <img src="{{slideItem.img}}" class="slider-img">
+          </div><!--overlay-->
+          <div class="card-title">{{slideItem.title}}</div>
+        </ion-slide>
+      </ion-slides>
+    </ion-row><!-- first row -->
+
+    <!-- second-row  sub-header-->
+    <ion-row class="grid-heading-row">
+      <ion-col col-4>
+        <p class="left-text">Free shipping</p>
+      </ion-col>
+      <ion-col col-8>
+        <p class="right-text">In your adress free shippinng..<br>
+          Enjoy shopping in <span class="special-text">Shopping Fest </span>Season
+        </p>
+      </ion-col>
+    </ion-row> <!-- second row -->
+    <p class="grid-title">
+      Categories
+    </p>
+    <!-- third-row -->
+    <!-- product categories row -->
+    <ion-row class="categories">
+      <!-- product col  -->
+      <ion-col col-6  *ngFor="let item of category" (click)="navProduct(item.id)">
+        <!-- <product image -->
+         <div class="overlay">
+           <img src="{{item.img}}">
+         </div>
+        <!-- category name -->
+        <p class="category-name">{{item.name}}</p>
+      </ion-col> <!-- col-6 50%  -->
+    </ion-row>
+  </ion-grid>
+</ion-content>

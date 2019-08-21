@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>News Application</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="news">
+  <ion-card class="category">
+    <div *ngFor= "let item of newsList" (click)="newsDetail(item.id)">
+      <div class="image">
+        <img src="{{item.image}}">
+        <div class="bg-overlay"></div>
+      </div>
+      <ion-row>
+        <ion-col class="cat-time">
+          <span class="badge">{{item.category}}</span>
+          <ion-note>
+            <span class="time">
+             <ion-icon ios="ios-time" md="md-time"></ion-icon>&nbsp;<span>{{item.time}}</span>
+            </span>
+          </ion-note>
+        </ion-col>
+      </ion-row>
+   
+    <ion-card-content>
+      <ion-row>
+        <ion-col col-11>
+          <p>{{item.title}}</p>
+        </ion-col>
+        <ion-col col-1>
+          <ion-icon class="bookmark" name="share" (click)="share()"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+     </div>
+  </ion-card>  
+</ion-content>

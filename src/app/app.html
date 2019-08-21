@@ -1,0 +1,36 @@
+<ion-menu persistent="true" [content]="content" class="menu">
+  <ion-content class="sidebar-menu">
+    <ion-row>
+      <ion-col class="cover"></ion-col>
+    </ion-row>
+    <ion-row class="img-name-row">
+      <ion-col col>
+        <img class="user-img" src="assets/images/profile.png">
+      </ion-col>
+    </ion-row>
+    <p class="user-name">Starter App</p>
+    <button menuClose class="menu-item" (click)="home();" ion-item>
+      <ion-icon name="home" item-left></ion-icon>
+      Home
+    </button>
+    <button menuClose class="menu-item" (click)="layouts();" ion-item>
+      <ion-icon name="create" item-left></ion-icon>
+      Layouts
+    </button>
+    <button menuClose class="menu-item" (click)="functions();" ion-item>
+      <ion-icon name="code" item-left></ion-icon>
+      Functions
+    </button>
+    <button menuClose class="menu-item" (click)="login();" ion-item>
+      <ion-icon name="bulb" item-left></ion-icon>
+      Firebase
+    </button>
+    <button menuClose class="menu-item" (click)="settings();" ion-item>
+      <ion-icon name="settings" item-left></ion-icon>
+      Settings
+    </button>
+  </ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,42 @@
+{
+	"category": [{
+			"id": "1",
+			"title": "Clothing",
+			"image": "http://res.cloudinary.com/ujju/image/upload/c_scale,w_682/v1499925341/starter/cloths.jpg"
+		},
+		{
+			"id": "2",
+			"title": "Restaurant",
+			"image": "http://res.cloudinary.com/ddboxana4/image/upload/v1502106796/vnx6pasech2hjxduphdl.jpg"
+		},
+		{
+			"id": "3",
+			"title": "Clothing",
+			"image": "http://res.cloudinary.com/ujju/image/upload/c_scale,w_682/v1499925341/starter/cloths.jpg"
+		},
+		{
+			"id": "4",
+			"title": "Restaurant",
+			"image": "http://res.cloudinary.com/ddboxana4/image/upload/v1502106796/vnx6pasech2hjxduphdl.jpg"
+		},
+		{
+			"id": "5",
+			"title": "Clothing",
+			"image": "http://res.cloudinary.com/ujju/image/upload/c_scale,w_682/v1499925341/starter/cloths.jpg"
+		},
+		{
+			"id": "6",
+			"title": "Restaurant",
+			"image": "http://res.cloudinary.com/ddboxana4/image/upload/v1502106796/vnx6pasech2hjxduphdl.jpg"
+		}
+	],
+	"slide": [{
+			"id": "1",
+			"image": "assets/images/banner.jpg"
+		},
+		{
+			"id": "2",
+			"image": "assets/images/banner.jpg"
+		}
+	]
+}

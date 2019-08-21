@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>News App</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="news-detail">
+  <div class="top-img-wrapper">
+    <!-- image -->
+    <img class="top-image" src="{{newsDetail.image}}">
+    <!-- Real floating action button, fixed. It will not scroll with the content -->
+    <ion-fab top right edge class="fab-icon">
+      <button ion-fab mini class="my-fab">
+        <ion-icon name="share"></ion-icon>
+      </button>
+     <ion-fab-list>
+        <button ion-fab (click)="fbSharing()">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+        <button ion-fab (click)="twitterSharing()">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </button>
+        <button ion-fab (click)="googleSharing()">
+          <ion-icon name="logo-googleplus"></ion-icon>
+        </button>
+        <button ion-fab (click)="whatsAppSharing()">
+          <ion-icon ios="logo-whatsapp" md="logo-whatsapp"></ion-icon>
+        </button>
+      </ion-fab-list>
+    </ion-fab>
+  </div>
+  <!-- atrticle's content -->
+  <div class="article-content" text-wrap>
+    <!-- heading -->
+    <ion-row>
+      <ion-col col-11>
+        <h4 class="heading">{{newsDetail.title}}
+        </h4>
+      </ion-col>
+      <ion-col col-1>
+    <span class="bookmark-block">
+    <span clear text-center *ngIf="!bookmark">
+        <ion-icon name="bookmark" class="bookmark" (click)="addBookmark()"></ion-icon>
+    </span>
+    <span clear text-center *ngIf="bookmark">
+         <ion-icon name="bookmark" class="bookmark-clicked" (click)="removeBookmark()">
+         </ion-icon>
+    </span>
+    </span>
+      </ion-col>
+    </ion-row>
+    <br>
+    <!-- writer -->
+
+    <div>
+      <p class="sub-heading">By {{newsDetail.author}} - {{newsDetail.time}}</p>
+    </div>
+    <!-- Details -->
+    <p class="description">{{newsDetail.details}}</p>
+  </div>
+</ion-content>

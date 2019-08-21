@@ -1,0 +1,93 @@
+.sidebar-menu{
+  background-image:url("../assets/images/menu-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bar-button-default, .bar-button-clear-default, .bar-button-default {
+  color: $white;
+  background-color: transparent;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+//hide toolbar border IOS
+
+.toolbar-background-ios {
+  border: 0;
+}
+
+//remove default anchor color
+a {
+  color: inherit;
+}
+
+//remove scroller
+::-webkit-scrollbar {
+  display: none;
+}
+
+// sidebar-header
+.sidebar-menu {
+  background-color: $white;
+  .list-md {
+    margin: 24px 0 16px 0;
+  }
+  .menu-bg {
+    height: 115px;
+    width: 100%;
+  }
+  .list .item-block .item-inner {
+    border-bottom: 0px;
+  }
+  .item.item-block .item-inner {
+    border-bottom: 0px;
+  }
+  .menu-item {
+    color: $white;
+    height: 3.5em;
+    border-bottom: 1px solid;
+    border-color: rgba(256, 256, 256, 0.1);
+    font-size: 2rem;
+    background: transparent;
+  }
+  .img-name-row {
+    .col{
+        margin-top: -56px;
+    }
+    .user-img {
+      border-radius: 10%;
+      border: 3px solid $white;
+      display: block;
+      margin: 0 auto;
+      height: 6em;
+      width: 6em;
+    }
+  }
+	.cover{
+		background-image: url("http://res.cloudinary.com/ujju/image/upload/c_scale,w_637/v1499925333/starter/group.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: $primary;
+        height: 125px;
+	}
+  .user-name {
+    color: $white;
+    text-align: center;
+    margin: 5px 0 10px 0;
+    font-size:2.2rem;
+    font-weight: 700;
+  }
+}
+
+/*common-header*/
+.toolbar-background {
+  background: $primary !important;
+}
+
+.toolbar-title {
+  color: $white-a;
+}

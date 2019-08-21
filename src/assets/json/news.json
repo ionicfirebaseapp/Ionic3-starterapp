@@ -1,0 +1,59 @@
+{
+
+	"news": [{
+			"id": "1",
+			"category": "Cricket",
+			"time": "2 Days ago",
+			"title": "Cricket is a bat and ball game, played between two teams",
+			"image": "http://res.cloudinary.com/ujju/image/upload/v1499925323/starter/cricket.jpg",
+			"author": "Ujjwal Bhardwaj",
+			"details": "Cricket is a bat-and-ball game played between two teams of eleven players on a cricket field  the centre of which is a rectangular 22 - yard - long pitch with a wicket(a set of three wooden stumps topped by two bails) at each end."
+
+		},
+		{
+			"id": "2",
+			"category": "Cricket",
+			"time": "2 Days ago",
+			"title": "Cricket is a bat and ball game, played between two teams",
+			"image": "http://res.cloudinary.com/ujju/image/upload/v1499925323/starter/cricket.jpg",
+			"author": "Ujjwal Bhardwaj",
+			"details": "Cricket is a bat-and-ball game played between two teams of eleven players on a cricket field  the centre of which is a rectangular 22 - yard - long pitch with a wicket(a set of three wooden stumps topped by two bails) at each end."
+
+
+		},
+		{
+			"id": "3",
+			"category": "Cricket",
+			"time": "2 Days ago",
+			"title": "Cricket is a bat and ball game, played between two teams",
+			"image": "http://res.cloudinary.com/ujju/image/upload/v1499925323/starter/cricket.jpg",
+			"author": "Ujjwal Bhardwaj",
+			"details": "Cricket is a bat-and-ball game played between two teams of eleven players on a cricket field  the centre of which is a rectangular 22 - yard - long pitch with a wicket(a set of three wooden stumps topped by two bails) at each end."
+
+
+
+		},
+		{
+			"id": "4",
+			"category": "Cricket",
+			"time": "2 Days ago",
+			"title": "Cricket is a bat and ball game, played between two teams",
+			"image": "http://res.cloudinary.com/ujju/image/upload/v1499925323/starter/cricket.jpg",
+			"author": "Ujjwal Bhardwaj",
+			"details": "Cricket is a bat-and-ball game played between two teams of eleven players on a cricket field  the centre of which is a rectangular 22 - yard - long pitch with a wicket(a set of three wooden stumps topped by two bails) at each end."
+
+
+		},
+		{
+			"id": "5",
+			"category": "Cricket",
+			"time": "2 Days ago",
+			"title": "Cricket is a bat and ball game, played between two teams",
+			"image": "http://res.cloudinary.com/ujju/image/upload/v1499925323/starter/cricket.jpg",
+			"author": "Ujjwal Bhardwaj",
+			"details": "Cricket is a bat-and-ball game played between two teams of eleven players on a cricket field  the centre of which is a rectangular 22 - yard - long pitch with a wicket(a set of three wooden stumps topped by two bails) at each end."
+
+
+		}
+	]
+}

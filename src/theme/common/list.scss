@@ -1,0 +1,96 @@
+.list-content{
+	.list-item{
+		padding-left: 0;
+		height: 90px;
+		.item-inner{
+				padding-right:0!important;
+				background-image:none!important;
+		}
+		.avatar-img{
+			height: 65px;
+			width: 96%;
+			//padding: 0 10px 8px 6px;
+		}
+		.title{
+			overflow: hidden;
+			color: $light-blue-theme;
+			margin: 7px 0 6px;
+   			font-size: 16px;
+   			text-overflow: ellipsis;
+		}
+		.descriptions{
+			color: $black-d;
+			font-size: 13px;
+			overflow:hidden;
+			margin-right:6px;
+			text-overflow: ellipsis;
+		}
+		.arrow-icon{
+			   color: $light-blue-b;	
+			   margin-top: 18px;
+			   font-size: 20px;
+			   font-weight: 600;
+		}
+	} //list-item
+    .list-details {
+        .top-image {
+            width: 100%;
+            height: 20em;
+        }
+        .content {
+            padding: 0 10px;
+            .title {
+                font-weight: 500;
+                font-size: 16px;
+                color: $light-blue-theme;
+            }
+            .sub-title {
+                color: $black-a;
+                font-size: 18px;
+                margin-top: -12px;
+            }
+            .date{
+            	margin: -14px 0px -5px;
+				color: $black-b;
+				border-bottom: 1px solid $white-b;
+				border-top: 1px solid $white-b;
+				padding: 5px 0 4px;
+				font-size: 12px;
+            }
+            .details {
+                color: $black-c;
+                font-weight: 400;
+                text-align: justify;
+                line-height: 20px;
+                margin-bottom: 8px;
+            }
+        }
+        .share-title{
+        	color: $black-b;
+        	font-size: 15px;
+        	font-weight: 500;
+        	margin-bottom: 8px;
+        }
+        .social-btn {
+            .btn-fb {
+                background-color: $facebook;
+                color: $white;
+                margin-right: 12px;
+                height: 2em;
+                width: 28px;
+            }
+            .btn-twitter {
+                @extend .btn-fb;
+                background-color: $twitter;
+            }
+            .btn-linkedin {
+                @extend .btn-fb;
+                background-color: $linkedin;
+            }
+            .btn-google-plus {
+                @extend .btn-fb;
+                background-color: $google-plus;
+            }
+        }
+    } //list-details -end
+}

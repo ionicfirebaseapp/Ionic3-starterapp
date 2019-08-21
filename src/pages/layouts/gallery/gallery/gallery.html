@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Gallery</ion-title>
+    <ion-buttons end>
+      <!-- list-button -->
+      <button ion-button small icon-only [hidden]="listBtnVisible" (click)="btnToggle()">
+        <ion-icon name="list-box"></ion-icon>
+      </button>
+      <!-- grid-button -->
+      <button ion-button small icon-only [hidden]="gridBtnVisible" (click)="btnToggle()">
+        <ion-icon name="grid"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="gallery-content">
+
+  <div class="gallary-grid" [hidden]="gridViewVisble">
+    <div class="img-wrap" *ngFor="let img of images">
+      <img src="{{img.image}}" (click)="navFullGallery(img.id)">
+    </div>
+  </div>
+
+  <div class="gallary-list" [hidden]="listViewVisble">
+    <div class="img-wrap" *ngFor="let img of images">
+      <img src="{{img.image}}" (click)="navFullGallery(img.id)">
+    </div>
+  </div>
+
+</ion-content>

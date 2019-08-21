@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Product-details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="ecommerce-content">
+  <div class="product-details">
+    <!-- product image -->
+    <img src="{{productItem.image}}">
+
+    <!-- info-link -->
+    <a class="info-link" (click)="navDescription(productItem.id)">Review</a>
+    <!-- selction options -->
+    <ion-row class="counter">
+      <ion-col>
+        <div class="quantity">
+
+          <button class="count" (click)="decrementOne()"> – </button>
+          <div class="show-count">
+            <p class="">{{productCounter}}</p>
+          </div>
+          <button class="count" (click)="incrementOne()"> + </button>
+
+        </div>
+      </ion-col>
+    </ion-row>
+    <!-- footer -->
+    <div class="bottom-row">
+      <!-- price -->
+      <p class="price">
+        <span class="cut-price">${{productItem.price}}</span>${{productItem.offprice}}</p>
+
+      <!-- ratings -->
+      <div class="rating-wrap">
+        <rating [(ngModel)]="rate" max="5" emptyStarIconName="star-outline" halfStarIconName="star-half" starIconName="star" nullable="false">
+        </rating>
+      </div>
+
+    </div>
+    <!-- botttom-row -->
+
+    <!--color-->
+    <div class="color-selector" radio-group>
+      <ion-row>
+        <ion-col col-4>
+          <p class="title"> Color</p>
+        </ion-col>
+        <ion-col col-8>
+          <div class="wrapper">
+            <ion-item>
+              <ion-label class="red"></ion-label>
+              <ion-radio value="red"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label class="blue"></ion-label>
+              <ion-radio value="blue"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label class="yellow"></ion-label>
+              <ion-radio value="yellow"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label class="black"></ion-label>
+              <ion-radio value="black"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label class="green"></ion-label>
+              <ion-radio value="green"></ion-radio>
+            </ion-item>
+          </div>
+          <!-- wrapper -->
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <!--description-->
+    <p class="description">
+      <strong>Description :</strong> {{productItem.description}}
+    </p>
+  </div>
+  
+</ion-content>
+
+  <ion-footer>
+    <button ion-button full class="go-to-next-btn" (click)="navCheckout()">Add to cart</button>
+  </ion-footer>

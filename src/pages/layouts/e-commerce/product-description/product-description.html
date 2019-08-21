@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Product-Review</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="ecommerce-content">
+
+  <!-- segment for product review and details -->
+
+  <ion-segment [(ngModel)]="product">
+    <!-- segment btn for description -->
+    <ion-segment-button value="detail">
+      Description
+    </ion-segment-button>
+    <!-- segment btn for review -->
+    <ion-segment-button value="review">
+      Review
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="product">
+    <!-- Product details -->
+    <div *ngSwitchCase="'detail'">
+      <!-- details text -->
+      <p class="product-details-text">
+       {{productDesc.description}}
+      </p>
+      <!--        <ion-footer>
+            share button
+                <button ion-button full class="share-btn">
+                    <ion-icon name="share"></ion-icon>&nbsp;&nbsp;Share
+                </button>
+            </ion-footer>-->
+
+    </div>
+
+    <!-- review segment content -->
+    <ion-list *ngSwitchCase="'review'">
+      <!-- review item -->
+      <ion-item class="review-item" text-wrap *ngFor ="let item of productReviewList">
+        <ion-thumbnail item-start>
+          <!-- user image -->
+          <img src="{{item.img}}">
+        </ion-thumbnail>
+        <!-- rating -->
+        <div class="rating-wrap" text-left>
+          <rating
+            max="5"
+            emptyStarIconName="star-outline"
+            halfStarIconName="star-half"
+            starIconName="star"
+            nullable="false">
+          </rating>
+        </div>
+        <!-- user name and date -->
+        <p class="name">{{item.name}}<span class="date">&nbsp;&nbsp;-May 10, 2017</span></p>
+        <!-- description -->
+        <p class="description">{{item.description}}</p>
+      </ion-item><!-- review item -->
+      <!-- review item -->
+     
+    </ion-list>
+  </div>
+</ion-content>

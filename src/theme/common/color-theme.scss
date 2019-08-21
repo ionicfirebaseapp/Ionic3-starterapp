@@ -1,0 +1,72 @@
+
+// Named Color Variables
+
+  $primary:    #212121;
+  $secondary:  #32db64;
+  $danger:     #f53d3d;
+  $light:      #f4f4f4;
+  $dark:       #222;
+
+  //White color
+  $white: #FFFFFF;
+  $white-a: darken($white, 3%);
+  $white-b: darken($white, 6%);
+  $white-c: darken($white, 12%);
+  $white-d: darken($white, 24%);
+
+  //Black color
+  $black: rgba(#000000, .8);
+  $black-a: lighten($black, 10%);
+  $black-b: lighten($black, 20%);
+  $black-c: lighten($black, 40%);
+  $black-d: lighten($black, 60%);
+
+  //black tranparent bg
+  $black-tranparent: rgba(0, 0, 0, 0.5);
+
+   //Orange COLOR
+  $orange:   #FF9800;
+  $orange-a: lighten($orange, 10%);
+  $orange-b: lighten($orange, 25%);
+  $orange-c: lighten($orange, 40%);
+  $orange-d: lighten($orange, 60%);
+
+// // Color Theme
+// --------------------------------------------------//
+//Light Blue theme
+  $light-blue-theme:   #212121 ;
+  $light-blue-a: lighten($light-blue-theme, 10%);
+  $light-blue-b: lighten($light-blue-theme, 25%);
+  $light-blue-c: lighten($light-blue-theme, 40%);
+  $light-blue-d: lighten($light-blue-theme, 60%);
+  //for tranparent blue bg
+  $light-blue-tranparent:rgba(30, 129, 214, 0.3);
+
+//Teal theme
+  $teal-theme:   #009688;
+  $teal-a: lighten($teal-theme, 10%);
+  $teal-b: lighten($teal-theme, 25%);
+  $teal-c: lighten($teal-theme, 40%);
+
+  $teal-d: lighten($teal-theme, 60%); 
+  $theme-color-1: #00e9d5;
+  $theme-color-2: #ae75e7;
+  $theme-color-3: #5e5874;
+  
+
+  $teal-d: lighten($teal-theme, 60%);
+
+
+// social button colors
+
+ $twitter:      #55acee;
+ $facebook:     #3B5998;
+ $google-plus:  #db4437;
+ $linkedin:     #007bb6;
+ //gallery
+ $gallery-bg:   #FFFAFA;
+ $grey:         #777;
+
+//border
+
+$border:        #d5d5d5;

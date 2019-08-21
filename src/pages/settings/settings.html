@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="settings">
+  <div class="">
+    <ion-row>
+      <img class="cover" src="http://res.cloudinary.com/ujju/image/upload/v1499925333/starter/group.jpg"><br>
+    </ion-row>
+    <ion-row>
+      <img class="img" src="assets/images/profile.png"><br>
+    </ion-row>
+
+    <ion-row>
+
+      <input type="file" name="file" id="inputFileId" class="inputfile"
+            >
+      <label for="inputFileId" class="upload">
+        <ion-icon ios="ios-cloud-upload" md="md-cloud-upload"></ion-icon>
+      </label>
+    </ion-row>
+  </div>
+  <form>
+    <ion-list>
+
+      <!--name-->
+      <ion-item>
+        <ion-label>Name:</ion-label>
+        <ion-input type="text" name="name" id="email"
+                   name="name"></ion-input>
+      </ion-item>
+      <!--email no-->
+      <ion-item>
+        <ion-label>Email id:</ion-label>
+        <ion-input type="email" name="card" id="card"
+                   name="email"></ion-input>
+      </ion-item>
+
+      <!--password-->
+      <ion-item>
+        <ion-label>Mobile No.:</ion-label>
+        <ion-input type="number" name="mobileNumber" id="mobileNumber"
+                   ></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <!--button-->
+    <button class="login-btn" ion-button type="submit">Save</button>
+  </form>
+
+</ion-content>

@@ -1,0 +1,12 @@
+stages:
+ - deploy
+
+deploy_to_firebase:
+   type: deploy
+   image: sandipk/ionic
+   script:
+     - npm install
+     - npm run ionic:build --prod
+     - firebase deploy --token "$FIREBASE_TOKEN" --public www
+   only:
+     - master

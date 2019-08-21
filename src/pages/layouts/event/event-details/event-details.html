@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Event-Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="event-content">
+  <div class="event-details">
+    <!-- title -->
+    <p class="title">
+      {{dispalyDetail.title}}
+    </p>
+    <!-- sub-title -->
+    <p class="sub-title">
+      {{dispalyDetail.subtitle}}
+    </p>
+    <!-- time and date -->
+    <p class="time">
+      <ion-icon name="calendar"></ion-icon>&nbsp;
+     {{dispalyDetail.day}}{{dispalyDetail.month}} &nbsp; &nbsp;
+      <ion-icon name="time"></ion-icon>&nbsp;
+      -  {{dispalyDetail.time}}
+    </p>
+    <!-- details -->
+    <p class="details">
+      {{dispalyDetail.details}}
+    </p><!-- details -->
+  </div> <!-- event-details -->
+
+  <!-- this creates a google map on the page with the given lat/lng from -->
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+</ion-content>

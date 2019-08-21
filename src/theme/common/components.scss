@@ -1,0 +1,115 @@
+
+  h2 {
+    margin-top: 1rem;
+  }
+  /*slider*/
+  .grid {
+    padding: 0px;
+    .slides {
+     
+      .slider-img {
+        height: 100px;
+        width: 100%;
+        position: relative;
+        z-index: -111;
+      }
+      .slider-text {
+        color:  $white;
+        font-size: 22px;
+        padding: 5px;
+        position: absolute;
+        bottom: 0;
+        margin: 5px 0px;
+      }
+      .swiper-pagination-bullet {
+        background: $light-blue-theme!important;
+      }
+    }
+    .heading{
+       background-color: $primary;
+       margin: 1em 0;
+      ion-icon{
+        font-size: 4.5em;
+        color: #fff;
+        padding-left:10px;
+      }
+      p{
+       font-size: 3rem;
+       padding: 10px;
+       margin: 0;
+       color: #fff;
+     }
+    }
+    //banner image
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: $white-a;
+    }
+
+    /*Categories*/
+
+    .categories {
+      flex-wrap: wrap;
+      ion-col{
+        position: relative;
+        width: 100%;
+   
+      }
+      h2 {
+        margin-top: -12px;
+        font-size: 2.7rem;
+        color: rgba(66, 66, 66, 0.87);
+        font-weight: 500;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: -111;
+      }
+      .text-over-img {
+        color: #fff;
+        font-size: 2.4rem;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        width: 100%;
+        margin: -43px 0px 0px 0px;
+        text-align: center;
+        font-weight: 300;
+
+      }
+    }
+  }
+  // tabs
+  .tab-button:hover:not(.disable-hover),.tab-button[aria-selected=true],
+  .tab-button[aria-selected=true] .tab-button-icon{
+    color: $light-blue-theme!important;
+  }
+
+  //search box 
+  .searchbar {  
+      border-top: 0.55px solid transparent !important;
+      border-bottom: 0.55px solid rgba(0, 0, 0, 0.05) !important;
+      background: rgba(0, 0, 0, 0.2) !important;
+    }
+  .searchbar-input{
+    border: 1px solid;
+    border-color: $light-blue-a !important;
+    border-radius: 12px !important;
+    line-height: 2rem !important;
+    box-shadow: none !important;
+  }
+  //search icon
+  .searchbar-search-icon{
+    top: 8px !important;
+  }
+
+  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+       border-bottom: 1px solid;
+       border-color: rgba(0,0,0,0.05);
+}

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Notifications</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="notifications-content">
+  <ion-item-group>
+    <ion-item-divider class="divider"><span>Today</span></ion-item-divider>
+    <ion-item *ngFor="let notification of notificationList" class="notification-item" (click)="navNotificationDetails(notification.id)">
+
+      <ion-avatar item-left>
+        <img src="{{notification.img}}" class="img-avatar">
+      </ion-avatar>
+
+      <h2 class="name">{{notification.name}}</h2>
+
+      <ion-note class="time" item-right>{{notification.time}}</ion-note>
+
+      <p class="description">{{notification.description}}</p>
+    </ion-item>
+    <ion-item-divider class="divider"><span>Yesterday</span></ion-item-divider>
+    <ion-item *ngFor="let notification of notificationList" class="notification-item" (click)="navNotificationDetails(notification.id)">
+
+      <ion-avatar item-left>
+        <img src="{{notification.img}}" class="img-avatar">
+      </ion-avatar>
+
+      <h2 class="name">{{notification.name}}</h2>
+
+      <ion-note class="time" item-right>{{notification.time}}</ion-note>
+
+      <p class="description">{{notification.description}}</p>
+    </ion-item>
+
+  </ion-item-group>
+</ion-content>

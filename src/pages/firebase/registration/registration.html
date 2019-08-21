@@ -1,0 +1,50 @@
+<!--
+  Generated template for the RegistrationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>registration</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="registration" padding>
+  <form [formGroup]="registration" (ngSubmit)="onSubmit()">
+    <img class="logo" src="assets/images/firebase-logo.png">
+
+    <img class="profile-img" [src]="url">
+      <input type="file" name="file" id="file" class="inputfile" (change)="UploadImage($event)" >
+          <label for="file" class="upload">
+            <ion-icon name="camera"></ion-icon>
+          </label>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Name</ion-label>
+        <ion-input type="text" value="" formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input type="email" value="" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-row class="btn-block">
+      <ion-col col-6>
+        <p class="reg" (click)="login();">GO TO LOGIN</p>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button full type="submit">Register</button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

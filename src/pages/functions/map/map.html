@@ -1,0 +1,29 @@
+﻿<ion-header>
+  <ion-navbar>
+    <ion-title>Map</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="map" padding>
+
+  <ion-row>
+    <input placeholder="Search Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="search" #search
+      [formControl]="searchControl">
+  </ion-row>
+
+  <agm-map [latitude]="lat2" [longitude]="lng2" [zoom]="zoom">
+    <agm-marker [latitude]="lat2" [longitude]="lng2"></agm-marker>
+    <div *ngIf="visible">
+      <agm-map-directions [origin]="origin" [destination]="destination">
+      </agm-map-directions>
+    </div>
+  </agm-map>
+
+  <ion-footer>
+    <button ion-button block class="dir-btn" (click)="getDirection()">
+      <ion-icon name="pin"></ion-icon>&nbsp; Get Direction
+    </button>
+  </ion-footer>
+
+</ion-content>

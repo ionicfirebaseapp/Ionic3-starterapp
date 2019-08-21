@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Check out</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="ecommerce-content checkout">
+  <form>
+    <ion-list class="address">
+
+      <ion-label (click)="addressToggler()" class="header">
+        <ion-icon ios="ios-home" md="md-home"></ion-icon>
+        &nbsp;&nbsp; Address +
+      </ion-label>
+      <div [hidden]="addressToggle" class="address-content">
+        <ion-item>
+          <ion-input type="text" placeholder="Name" name="name" id="name">
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-textarea rows="3" placeholder="Address" name="adress" id="adress">
+          </ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" placeholder="City" name="city" id="city">
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="number" placeholder="Pincode" name="pincode" id="pincode"></ion-input>
+        </ion-item>
+      </div>
+    </ion-list> <!-- adress -->
+
+    <!--payment method-->
+    <ion-list radio-group class="payment-wrap">
+      <ion-label class="header">
+        <ion-icon name="card"></ion-icon>&nbsp;&nbsp;
+        Payment method
+      </ion-label>
+      <ion-row>
+        <ion-col col-6>
+          <ion-item>
+            <ion-label>COD</ion-label>
+            <ion-radio (click)="hide()"></ion-radio>
+          </ion-item>
+        </ion-col>
+        <ion-col col-6>
+          <ion-item>
+            <ion-label>CARD</ion-label>
+            <ion-radio (click)="toggle2()"></ion-radio>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <!--show / hide card form-->
+      <section class="card-form" [hidden]="openCard">
+
+        <!--payment  form-->
+        <form class="payment-form">
+          <ion-list>
+            <ion-item>
+              <ion-label stacked>Name on Card</ion-label>
+              <ion-input type="text" placeholder="Your Name" name="nameOnCard" id="nameOnCard"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label stacked>Card No</ion-label>
+              <ion-input type="text" placeholder="**************" name="cardNo" id="cardNo" maxlength="16"
+              ></ion-input>
+            </ion-item>
+            <ion-row class="2-block">
+              <ion-col col-8 class="date">
+                <ion-item>
+                  <ion-label stacked>Expiry Date</ion-label>
+                  <ion-input type="date" name="expiryDate" id="expiryDate"
+                  ></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col col-4 class="cvv">
+                <ion-item>
+                  <ion-label stacked>Cvv</ion-label>
+                  <ion-input type="password" placeholder="***" name="cvv" id="cvv" maxlength="3"
+                  ></ion-input>
+                </ion-item>
+              </ion-col>
+
+            </ion-row>
+          </ion-list>
+        </form>
+      </section>
+    </ion-list>
+  </form>
+</ion-content>
+   <ion-footer>
+      <button class="go-to-next-btn" type="submit" ion-button full>
+        Check out
+      </button>
+    </ion-footer>

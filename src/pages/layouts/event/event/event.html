@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Event</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="event-content">
+
+  <!--segment for today and upcoming Event-->
+  <ion-segment [(ngModel)]="event">
+    <!-- segment btn for Taday's event -->
+    <ion-segment-button value="today">
+      <!-- <ion-icon name="calendar"></ion-icon>&nbsp;   -->
+      Today
+    </ion-segment-button>
+    <!-- segment btn for upcoming event -->
+    <ion-segment-button value="upcoming">
+      <!-- <ion-icon name="calendar"></ion-icon>&nbsp; -->
+      Upcoming
+    </ion-segment-button>
+  </ion-segment>
+  <!-- content -->
+  <div [ngSwitch]="event">
+
+    <!-- Today-->
+    <ion-list *ngSwitchCase="'today'">
+      <button ion-item class="event-item" *ngFor="let item of events; let i = index " (click)="navEventDetail(item.id)">
+        <ion-row no-padding>
+          <!-- col-for date -->
+          <ion-col col-3 text-center no-padding>
+            <div class="calendar">
+              <div class="day">{{item.day}}</div>
+              <div class="month">{{item.month}}</div>
+              <div class="time">{{item.time}}</div>
+            </div>
+          </ion-col>
+          <!-- col-for-content -->
+          <ion-col col-8>
+            <div class="content">
+              <!-- title -->
+              <h3 class="title">{{item.title}}</h3>
+              <!-- time -->
+              <div class="time">
+                <ion-icon name="time"></ion-icon>&nbsp;&nbsp;
+                {{item.time}}
+              </div>
+              <!-- address -->
+              <div class="address">
+                <ion-icon name="navigate"></ion-icon>&nbsp;&nbsp;
+                {{item.address}}
+              </div>
+
+            </div> <!-- content -->
+          </ion-col>
+          <!-- col-for-arrow-icon -->
+          <ion-col col-1>
+            <ion-icon name="arrow-forward" class="arrow-icon"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </button>
+    </ion-list>
+
+    <!-- Upcoming -->
+    <ion-list *ngSwitchCase="'upcoming'">
+      <button ion-item class="event-item" *ngFor="let item of events_upcomming ;
+      let i = index " (click)="navEventDetail(item.id)">
+        <ion-row no-padding>
+          <!-- col-for date -->
+          <ion-col col-3 text-center no-padding>
+            <div class="calendar">
+              <div class="day">{{item.day}}</div>
+              <div class="month">{{item.month}}</div>
+              <div class="time">{{item.time}}</div>
+            </div>
+          </ion-col>
+          <!-- col-for-content -->
+          <ion-col col-8>
+            <div class="content">
+              <!-- title -->
+              <h3 class="title">{{item.title}}</h3>
+              <!-- time -->
+              <div class="time">
+                <ion-icon name="time"></ion-icon>&nbsp;&nbsp;
+                {{item.time}}
+              </div>
+              <!-- address -->
+              <div class="address">
+                <ion-icon name="navigate"></ion-icon>&nbsp;&nbsp;
+                {{item.address}}
+              </div>
+
+            </div> <!-- content -->
+          </ion-col>
+          <!-- col-for-arrow-icon -->
+          <ion-col col-1>
+            <ion-icon name="arrow-forward" class="arrow-icon"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </button>
+    </ion-list>
+
+
+  </div> <!--content -->
+
+</ion-content>

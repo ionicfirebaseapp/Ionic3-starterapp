@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Video Capture</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="video-capture" padding>
+  <ion-row>
+    <ion-col col-6>
+      <button ion-button full class="send-btn" (click)="startrecording()">Capture</button>
+    </ion-col>
+    <ion-col col-6>
+      <button ion-button full class="send-btn" (click)="selectvideo()">Select File</button>
+    </ion-col>
+  </ion-row>
+  <video #myvideo controls></video>
+
+</ion-content>

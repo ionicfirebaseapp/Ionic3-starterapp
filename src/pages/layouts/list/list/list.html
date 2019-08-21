@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="list-content">
+  <ion-list>
+    <button ion-item class="list-item" *ngFor="let item of listArray" (click)="navListDetails(item.id)">
+      <ion-row no-padding>
+        <!-- col-for img -->
+        <ion-col col-3>
+          <img src="{{item.img}}" class="avatar-img">
+        </ion-col>
+        <!-- col-for-content -->
+        <ion-col col-8>
+          <!-- title -->
+          <h3 class="title">{{item.title}}</h3>
+          <!-- description -->
+          <p class="descriptions">{{item.desc}}</p>
+        </ion-col>
+        <!-- col-for-arrow-icon -->
+        <ion-col col-1>
+          <ion-icon name="arrow-forward" class="arrow-icon"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </button>
+  </ion-list>
+</ion-content>

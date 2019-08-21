@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-grid class="grid">
+    <ion-row><!-- first row -->
+      <ion-slides initialSlide=0 speed="3000" loop="true" pager="true" style="direction:ltr">
+        <ion-slide *ngFor = "let item of sliderList" >
+          <div class="overlay" >
+            <img src="{{item.image}}" class="slider-img">
+          </div><!--overlay-->
+        </ion-slide>
+      </ion-slides> 
+    </ion-row><!-- first row -->
+    <!-- second-row -->
+    <ion-row class="heading">
+      <ion-col col-3>
+        <ion-icon name="ionic"></ion-icon>
+      </ion-col>
+      <ion-col col-9>
+    <p>Ionic Starter App</p>
+  </ion-col>
+     </ion-row>
+    <ion-row class="categories" >
+      <ion-col col-12 *ngFor = "let item of homeList">
+        <div (click)="onClickItem(item.title)">
+          <img src="{{item.image}}">
+          <p class="text-over-img">{{item.title}}</p>
+        </div>
+      </ion-col>    
+    </ion-row>
+  </ion-grid>
+</ion-content>

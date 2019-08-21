@@ -1,0 +1,31 @@
+{
+	"team": [{
+			"id": "0101",
+			"img": "assets/images/profile.png",
+			"name": "John Doe",
+			"designation": "Cheif Executive Officer",
+			"detail": "John joseph is the CEO of our company Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+		},
+		{
+			"id": "0201",
+			"img": "assets/images/profile.png",
+			"name": "Tony Stark",
+			"designation": "Software Devloper",
+			"detail": "Tony Starkis the Software Devloper of our company Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+		},
+		{
+			"id": "0301",
+			"img": "assets/images/profile.png",
+			"name": "Michel Johnsen",
+			"designation": "Team Leader",
+			"detail": "Michel Johnsen is the Team Leader of our company Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+		},
+		{
+			"id": "0401",
+			"img": "assets/images/profile.png",
+			"name": "Tona Bern",
+			"designation": "UI Developer",
+			"detail": "Tona Bern is the UI Developer of our company Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+		}
+	]
+}
