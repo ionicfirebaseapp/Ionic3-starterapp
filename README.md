@@ -50,6 +50,8 @@ Read the [Getting started page](https://docs.ionicfirebaseapp.com/ionicstarter) 
 
 ## Features
 
+<h3>Ionic Starter App Main Features Overview:</h3>
+
 1. E-Commerce category,product,details,cart screen
 2. News Category,List view, Details page and More..
 3. List, Notification and List-details layout
@@ -73,7 +75,7 @@ Read the [Getting started page](https://docs.ionicfirebaseapp.com/ionicstarter) 
 ## Product Screens:
 
 <p align="center">
-    <img src="https://res.cloudinary.com/dzu7tvexv/image/upload/f_auto,q_auto/v1533023885/vempmd3tcon41z7znjk6.png" alt="Ionic Free Theme Template">
+    <img src="https://res.cloudinary.com/dzu7tvexv/image/upload/f_auto,q_auto/v1533023791/wyt04wfo5fmvrgwxbny1.jpg" alt="Ionic Mobiel Screen">
 </p>
 <p align="center">
   <img src="https://res.cloudinary.com/dzu7tvexv/image/upload/f_auto,q_auto/v1533644509/vz3xyin84z1eekhchkjx.png" alt="Gallary">
@@ -84,7 +86,7 @@ Read the [Getting started page](https://docs.ionicfirebaseapp.com/ionicstarter) 
 
 ## What's included
 
-Within the download you'll find ionic 3 starter app.
+Our Ionic Starter Mobile Application (APP) includes free source code to download, Within the free download you'll get ionic 3 starter app source code that you can delpoy for your mobile application with any database like Firebase and NodJS API and on which you are confortable with.
 
 
 ## Bugs and feature requests
@@ -93,7 +95,7 @@ Have a bug or a feature request. If your problem or idea is not addressed yet, [
 
 ## Documentation
 
-ionic starter app documentation, included in this repo in the root directory, is built with [ionic](https://ionicframework.com/) and publicly hosted on ionicfirebaseapp docs Pages at <https://docs.ionicfirebaseapp.com/ionicstarter/>.
+Ionic starter app documentation, included in this repo in the root directory, is built with [ionic](https://ionicframework.com/) and publicly hosted on ionicfirebaseapp docs Pages at <https://docs.ionicfirebaseapp.com/ionicstarter/>.
 
 
 ## Copyright and license
@@ -109,13 +111,15 @@ Code and documentation copyright 2017-2019 the [IONICFIREBASEAPP Authors](https:
 
 ### Social Media
 
+Linkedin: <https://www.linkedin.com/company/ionicfirebaseapp>
+
 Twitter: <https://twitter.com/ionicfirebaseap>
 
 Facebook: <https://www.facebook.com/ionicfirebaseapp>
 
-Linkedin: <https://www.linkedin.com/company/ionicfirebaseapp>
-
 Instagram: <https://www.instagram.com/ionicfirebaseapp>
+
+Medium: <https://medium.com/ionicfirebaseapp>
 
 ### Most Popular Technologies & Products based on User Choice Last Month
 
