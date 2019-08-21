@@ -6,12 +6,12 @@
 </p>
 <h3 align="center">IONICFIREBASEAPP</h3>
 
- <a href="https://www.ionicfirebaseapp.com/products/ionic-firebase-restaurant-mobile-app"> <h3 align="center">GET IONIC V4 </h3> </a>
+
 
 <p align="center">
-  Marketplace for Mobile app and Backend that developed on leading Enterprise Technologies with as well as with your custom Applictaion design.
+  Marketplace for Mobile app and Backend which is developed on leading Enterprise Technologies with as well as with your custom Applictaion design.
   <br>
-  <a href="https://docs.ionicfirebaseapp.com/ionicrestaurantapp/"><strong>Explore Restaurant docs »</strong></a>
+  <a href="https://docs.ionicfirebaseapp.com/ionicstarter"><strong>Explore Ionic Starter Docs »</strong></a>
   <br>
   <br>
   </p>
@@ -36,51 +36,47 @@
 
 Ionic V3 version is available for free download. 
 
-Buy Ionic V4 from [ionicfirebaseapp](https://www.ionicfirebaseapp.com/products/ionic-firebase-restaurant-mobile-app)
 
-- [Download the latest release Free.](https://www.ionicfirebaseapp.com/products/ionic-firebase-restaurant-mobile-app)
+- [Download the latest release Free.](https://www.ionicfirebaseapp.com/products/ionic-starter-ui-ux-kit)
 - Install with [npm](https://www.npmjs.com/): `npm install`
 - Install with [ionic](https://ionicframework.com/): `ionic serve`
 
-Read the [Getting started page](https://docs.ionicfirebaseapp.com/ionicrestaurantapp/) for information on the ionic firebase restaurant app.
+Read the [Getting started page](https://docs.ionicfirebaseapp.com/ionicstarter) for information on the ionic firebase restaurant app.
 
 ## Features
 
-1. Browse categories and there MenuItems
-2. Add to cart MenuItems
-3. Table booking available
-4. Live chat with Restaurant Admin
-5. News list related to food & restaurant
-6. Save favorite item to buy again just in a click
-7. Manage Address and Checkout features
-8. Payment integration with Paypal and Stripe
-9. Easy to integrate any local payment gateway
-10. Track your order status
-11. Offers, Coupons, Taxes applied
-12. Develop with Ionic 3 (ionic V4 available for Pro-members)
-13. Clean UI and Easy to Customize
-14. Support Firebase and custom Rest API backend 
-15. This repo contains the firebase version of app. 
+1. E-Commerce category,product,details,cart screen
+2. News Category,List view, Details page and More..
+3. List, Notification and List-details layout
+4. Components for E-commerce grid and list product view
+5. Social media home screen layout
+6. Events/Schedules/Notifications
+7. Map integration
+8. Develop with Ionic 3 and angular 5
+9. Easy to Reuse any components
+10. FireStore login and registration
+11. Auth User can update profile
+12. Social login, registration
+13. Push Notification
+14. Barcode scanner
+15. In app browser 
+15. Call number just on a click
+16. Video capture & play
+17. Geolocation Integration
+18. Many More native features
 
 ## What's included
 
-Within the download you'll find angular firebase version of ionic app. Admin Dashboard to manage Menu or Orders not been available in this repo. 
+Within the download you'll find ionic 3 starter app.
 
-You can Buy the Admin Dashboard from [ionicfirebaseapp](https://www.ionicfirebaseapp.com/products/backend-restaurant-firebase-app/)
-
-<p align="lef">
-  <a href="https://www.ionicfirebaseapp.com/products/backend-restaurant-firebase-app/">
-    <img src="https://res.cloudinary.com/dzu7tvexv/image/upload/f_auto,q_auto/v1533121925/t69hxnkvvylr65tmeose.jpg" alt="ionicfirebaseapp restaruant backend">
-  </a>
-</p>
 
 ## Bugs and feature requests
 
-Have a bug or a feature request. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/ionicfirebaseapp/ionic-3-restaurantapp/issues/new).
+Have a bug or a feature request. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/ionicfirebaseapp/ionic-3-starterapp/issues/new).
 
 ## Documentation
 
-ionicfirebase restarurant documentation, included in this repo in the root directory, is built with [ionic](https://ionicframework.com/) and publicly hosted on ionicfirebaseapp docs Pages at <https://docs.ionicfirebaseapp.com/ionicrestaurantapp/>.
+ionic starter app documentation, included in this repo in the root directory, is built with [ionic](https://ionicframework.com/) and publicly hosted on ionicfirebaseapp docs Pages at <https://docs.ionicfirebaseapp.com/ionicstarter/>.
 
 
 ## Copyright and license
