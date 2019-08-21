@@ -1,5 +1,5 @@
 <h2>Ionic 3 Starter Mobile App Theme</h2>
-<span> <b>Ionic 3 Starter Mobile App Free Theme</b> </span> has been introduging with new feature and updated with UI/UX with defenite release with Firebase.
+We introduced Ionic 3 Starter Mobile App Free Theme with new feature and updated, UI/UX with defenite release with Firebase. We released our Ioinc Starter Mobile Application open-source that made as per industries Standard, So you will get a handfree development as per enterprise standard. So let start building application with Ionic.
 
 ## About IONICFIREBASEAPP
 
