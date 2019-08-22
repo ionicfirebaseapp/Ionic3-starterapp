@@ -91,7 +91,7 @@ Our Ionic Starter Mobile Application (APP) includes free source code to download
 
 ## Bugs and feature requests
 
-Have a bug or a feature request. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/ionicfirebaseapp/ionic-3-starterapp/issues/new).
+Have a bug or a feature request. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/ionicfirebaseapp/ionic3-starterapp/issues/new).
 
 ## Documentation
 
