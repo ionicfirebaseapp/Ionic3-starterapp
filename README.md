@@ -75,7 +75,7 @@ Read the [Getting started page](https://docs.ionicfirebaseapp.com/ionicstarter) 
 ## Product Screens:
 
 <p align="center">
-    <img src="https://camo.envatousercontent.com/4faf95acb850dfdb30b65778864f872c9c78a830/687474703a2f2f7265732e636c6f7564696e6172792e636f6d2f756a6a752f696d6167652f75706c6f61642f76313532343633383839352f737461727465722f737461727465722d616c6c2d73637265656e732e6a7067" alt="Ionic Mobiel Screen">
+    <img src="https://res.cloudinary.com/ujju/image/upload/v1524638895/starter/starter-all-screens.jpg" alt="Ionic Mobile Screen">
 </p>
 
 ## What's included
