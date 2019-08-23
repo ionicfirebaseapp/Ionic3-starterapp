@@ -75,13 +75,7 @@ Read the [Getting started page](https://docs.ionicfirebaseapp.com/ionicstarter) 
 ## Product Screens:
 
 <p align="center">
-    <img src="https://res.cloudinary.com/dzu7tvexv/image/upload/f_auto,q_auto/v1533023791/wyt04wfo5fmvrgwxbny1.jpg" alt="Ionic Mobiel Screen">
-</p>
-<p align="center">
-  <img src="https://res.cloudinary.com/dzu7tvexv/image/upload/f_auto,q_auto/v1533644509/vz3xyin84z1eekhchkjx.png" alt="Gallary">
-  <img src="https://res.cloudinary.com/dzu7tvexv/image/upload/f_auto,q_auto/v1533644510/w61ef94f2mesmx6tkuy9.png" alt="Product Details Screen">
-  <img src="https://res.cloudinary.com/dzu7tvexv/image/upload/f_auto,q_auto/v1533644510/fnd2vylfs3boptn5sfjr.png" alt="Social Share Screen">
-  <img src="https://res.cloudinary.com/dzu7tvexv/image/upload/f_auto,q_auto/v1533644511/zugzhcsvpsiyekp8xerm.png" alt="Categories Page Screen">
+    <img src="https://camo.envatousercontent.com/4faf95acb850dfdb30b65778864f872c9c78a830/687474703a2f2f7265732e636c6f7564696e6172792e636f6d2f756a6a752f696d6167652f75706c6f61642f76313532343633383839352f737461727465722f737461727465722d616c6c2d73637265656e732e6a7067" alt="Ionic Mobiel Screen">
 </p>
 
 ## What's included
